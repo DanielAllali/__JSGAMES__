@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cups</title>
+    <link rel="stylesheet" href="cups.css">
+    <link rel="shotcut icon" href="./paper-cup.png">
+</head>
+
+<body>
+    <audio id="click" src="sounds/click.mp3"></audio>
+    <audio id="lose" src="sounds/lose.mp3"></audio>
+    <audio id="win" src="sounds/win.mp3"></audio>
+    <div id="playDiv">
+        <button id="playBtn" onclick="startGame()">תתחיל!</button>
+    </div>
+    <div id="container">
+        <h1>בחר כוס</h1>
+        <div>
+            <img src="paper-cup.png" alt="cup" id="cup1">
+            <img src="paper-cup.png" alt="cup" id="cup2">
+            <img src="paper-cup.png" alt="cup" id="cup3">
+        </div>
+    </div>
+    <div id="blocker"></div>
+    <script src="cups.js"></script>
+</body>
+
+</html>

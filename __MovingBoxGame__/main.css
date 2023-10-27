@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "fire";
+  src: url(Hellbone-Demo.otf);
+}
+body {
+  animation: bgcAni 0.5s infinite;
+}
+
+@keyframes bgcAni {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: black;
+  }
+}
+.startContainer {
+  margin: 0 auto;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.startContainer span {
+  font-size: 150pt;
+  font-family: fire;
+  color: black;
+}
+
+.startContainer button {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000;
+  font-family: "Caprasimo", cursive;
+  border: none;
+  border-radius: 15px;
+  margin-top: 200px;
+  font-size: 40pt;
+}
+
+.startContainer button:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: red;
+}/*# sourceMappingURL=main.css.map */

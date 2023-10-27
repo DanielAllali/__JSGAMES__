@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TO</title>
+    <link rel="stylesheet" href="xo.css">
+    <link rel="shortcut icon" href="images/ticTacToBorad.png">
+</head>
+
+<body>
+    <div id="playDiv">
+        <button id="playBtn">Start New Game</button>
+    </div>
+    <table id="board">
+        <tr id="row1">
+            <td id="cell1"><img src="./images/xHover.png" id="cellImg1" onclick="clickFunc(0)"></td>
+            <td id="cell2"><img src="./images/xHover.png" id="cellImg2" onclick="clickFunc(1)"></td>
+            <td id="cell3"><img src="./images/xHover.png" id="cellImg3" onclick="clickFunc(2)"></td>
+        </tr>
+        <tr id="row2">
+            <td id="cell4"><img src="./images/xHover.png" id="cellImg4" onclick="clickFunc(3)"></td>
+            <td id="cell5"><img src="./images/xHover.png" id="cellImg5" onclick="clickFunc(4)"></td>
+            <td id="cell6"><img src="./images/xHover.png" id="cellImg6" onclick="clickFunc(5)"></td>
+        </tr>
+        <tr id="row3">
+            <td id="cell7"><img src="./images/xHover.png" id="cellImg7" onclick="clickFunc(6)"></td>
+            <td id="cell8"><img src="./images/xHover.png" id="cellImg8" onclick="clickFunc(7)"></td>
+            <td id="cell9"><img src="./images/xHover.png" id="cellImg9" onclick="clickFunc(8)"></td>
+        </tr>
+    </table>
+    <table id="verticleLines">
+        <tr></tr>
+        <tr></tr>
+        <tr id="vertLine"></tr>
+    </table>
+    <h1 id="whoWon"></h1>
+    <h1 id="turn"></h1>
+    <div id="wrapper"></div>
+    <script src="xo.js"></script>
+</body>
+
+</html>

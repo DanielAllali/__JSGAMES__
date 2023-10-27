@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "default";
+}
+
+@font-face {
+    font-family: "default";
+    src: url("./fonts/Oswald-VariableFont_wght.ttf");
+}
+
+body {
+    background-color: #FBFBFB;
+}
+
+/* play button */
+#playDiv {
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#playBtn {
+    width: 13vw;
+    height: 5vw;
+    margin-top: 15vw;
+    padding-bottom: 10px;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #F8EFE0, #F8EFE0, white);
+    border: 0.5px solid black;
+    cursor: pointer;
+    transition: width 0.2s, height 0.2s, font-size 0.2s, color 0.2s;
+}
+
+#playBtn:hover {
+    background: none;
+    background-color: #F8EFE0;
+    width: 17.3vw;
+    height: 7.5vw;
+    font-size: 2.6666vw;
+    color: burlywood;
+}
+
+/* board */
+
+table {
+    width: 30vw;
+    height: 30vw;
+    margin: 0 auto;
+    margin-top: 5vw;
+    position: relative;
+    z-index: 40;
+    display: none;
+}
+
+table tr {
+    width: 30vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #000;
+}
+
+table tr#row3 {
+    border: none;
+}
+
+table tr td img {
+    width: 8vw;
+}
+
+table td {
+    cursor: pointer;
+}
+
+table td img {
+    visibility: hidden;
+}
+
+table td:hover img {
+    visibility: visible;
+}
+
+
+table#verticleLines {
+    position: absolute;
+    top: 0;
+    left: 34.8vw;
+    z-index: 1;
+    transform: rotate(90deg);
+}
+
+#verticleLines #vertLine {
+    border: none;
+}
+
+/* who won */
+#whoWon {
+    width: 22vw;
+    font-size: 5vw;
+    margin: 0 auto;
+    color: gold;
+    position: absolute;
+    top: 10vw;
+    left: 38vw;
+    z-index: 9999999;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: block;
+}
+
+/* turn (FOR GLOBAL VARIABLE IN A FUNCTION) */
+#turn {
+    display: none;
+}
+
+/* wrapper so they cant click on screen after win/tye */
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    display: none;
+}

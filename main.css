@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 50vw;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    margin-left: 10px;
+}
+
+button {
+    width: 8vw;
+    height: 5vw;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+a[href*="cups"] button {
+    color: #146C94;
+    background-color: #AFD3E2;
+    border: 0.5px solid #AFD3E2;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+a[href*="cups"] button:hover {
+    font-weight: 1000;
+    background-color: #c7eeff;
+}
+
+
+
+
+@font-face {
+    font-family: "boxGameFont";
+    src: url("__MovingBoxGame__/Hellbone-Demo.otf");
+}
+
+a[href*="Moving"] button {
+    font-size: 2rem;
+    font-family: "boxGameFont";
+    background-color: rgba(200, 0, 0, 0.2);
+    color: #000;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+a[href*="Moving"] button:hover {
+    background-color: rgba(255, 1, 1, 0.3);
+    color: red;
+}
+
+
+
+@font-face {
+    font-family: "ticFont";
+    src: url("X-O/fonts/Oswald-VariableFont_wght.ttf");
+}
+
+a[href*="X-O"] button {
+    font-family: "ticFont";
+    background: linear-gradient(to right, #F8EFE0, #F8EFE0, white);
+    border: 0.5px solid black;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+a[href*="X-O"] button:hover {
+    background: none;
+    background-color: #F8EFE0;
+    color: burlywood;
+}
