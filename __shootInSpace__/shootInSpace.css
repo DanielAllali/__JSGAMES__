@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "norma";
+    src: url("fonts/Prompt-Regular.ttf");
+}
+
+@font-face {
+    font-family: "normaBold";
+    src: url("fonts/Prompt-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "norma";
+}
+
+body {
+    background-color: #1d1d2c;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* start */
+#start {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+}
+
+#start h1 {
+    font-size: 4rem;
+    font-family: "normaBold";
+    transition: color 1s, margin-left 0.2s;
+    animation: headAni 2s infinite;
+}
+
+@keyframes headAni {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+#start button {
+    background: none;
+    border: none;
+    color: darkorchid;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    top: 400px;
+    animation: buttonAni 0.5s infinite;
+}
+
+@keyframes buttonAni {
+    0% {
+        top: 400px;
+    }
+
+    50% {
+        top: 390px;
+    }
+
+    100% {
+        top: 400px;
+    }
+}
+
+/* canvas */
+#game {
+    width: 1100px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+#player {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 950px;
+    top: 590px;
+    display: none;
+}
