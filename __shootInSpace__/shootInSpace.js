@@ -17,6 +17,7 @@ game.style.backgroundImage = "url(images/background.jpg)"; */
 const player = document.getElementById("player");
 let playerXY = ["950px", "590px"]
 let playerX = 950;
+let playerY = 590;
 
 /* enemy */
 let enemy = document.createElement("img");
@@ -26,6 +27,7 @@ enemy.style.width = "70px";
 enemy.style.height = "70px";
 enemy.style.position = "absolute";
 enemyXY = ["950px", "50px"]
+enemyXYNumber = [950, 50]
 enemy.style.left = enemyXY[0];
 enemy.style.top = enemyXY[1];
 enemy.style.transition = "left 0.1s";
