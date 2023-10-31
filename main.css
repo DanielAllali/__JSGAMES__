@@ -37,6 +37,19 @@ a[href*="cups"] button:hover {
     background-color: #c7eeff;
 }
 
+a[href*="memory"] button {
+    font-size: 32px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #3caca8;
+    border: none;
+    color: white;
+    transition: width 0.2s, height 0.2s, font-size 0.2s, background-color 0.2s;
+}
+
+a[href*="memory"] button:hover {
+    background-color: #59fff9;
+}
 
 
 
